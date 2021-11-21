@@ -1,11 +1,3 @@
-#!/bin/bash
-
-# Customization section
-HOME_FOLDER_ROOT=/mnt/data/pablo/home
-# When you finish setting your config, comment the next line
-echo "Remember to edit the config!"; exit 1
-# End customization section
-
 echo '*** Installing Gnome DE ***'
 
 sudo pacman -S \
@@ -71,12 +63,5 @@ sudo pacman -S \
     xorg-xinit \
     --needed --noconfirm
 
-if [[ ! -f "$HOME_FOLDER_ROOT/.local/share/gnome-shell" ]]; then
-  mkdir -p "$HOME_FOLDER_ROOT/.local/share/gnome-shell"
-fi
-
-if [[ "$HOME_FOLDER_ROOT" != "$HOME" ]]; then
-  ln -s "$HOME_FOLDER_ROOT/.local/share/gnome-shell" "$HOME/.local/share"
-fi
 
 sudo systemctl enable gdm

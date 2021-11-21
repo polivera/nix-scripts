@@ -4,7 +4,6 @@
 MACHINE_NAME=otrave
 BOOT_DIRECTORY=/boot/efi
 TIME_ZONE="/America/Argentina/Buenos_Aires"
-HOST_FILE_PATH=/mnt/data/system/hosts
 SUDO_WITH_PASSWORD=0
 USER_NAME=pablo
 # When you finish setting your config, comment the next line
@@ -29,14 +28,7 @@ echo 'LANG=en_US.UTF-8' >/etc/locale.conf
 echo "*** Setting computer name to ${MACHINE_NAME} ***"
 echo "${MACHINE_NAME}" >/etc/hostname
 
-echo "*** Configure hostfile to ${HOST_FILE_PATH} ***"
-if [[ ${HOST_FILE_PATH} != "/etc/hosts" ]]; then
-  if [[ ! -f ${HOST_FILE_PATH} ]]; then
-    touch $HOST_FILE_PATH
-  fi
-  rm /etc/hosts
-  ln -s $HOST_FILE_PATH -T /etc/hosts
-fi
+echo "*** Configure hostfile ***"
 # shellcheck disable=SC2129
 echo '127.0.0.1    localhost' >>/etc/hosts
 echo '::1          localhost' >>/etc/hosts
@@ -46,10 +38,10 @@ echo "127.0.1.1    ${MACHINE_NAME} ${MACHINE_NAME}.localhost" >>/etc/hosts
 mkinitcpio -P
 
 # user config
-echo "[INFO] Setting root Password"
+echo "*** Setting root Password ***"
 passwd
 
-echo "[INFO] Setting ${USER_NAME} Password"
+echo "*** Setting ${USER_NAME} Password ***"
 useradd -m $USER_NAME -G wheel
 passwd $USER_NAME
 
@@ -73,3 +65,4 @@ sed -i 's/#Color/Color/g' /etc/pacman.conf
 echo '' >>/etc/pacman.conf
 echo '[multilib]' >>/etc/pacman.conf
 echo 'Include = /etc/pacman.d/mirrorlist' >>/etc/pacman.conf
+

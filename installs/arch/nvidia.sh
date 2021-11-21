@@ -4,11 +4,15 @@ echo '*** Installing nVidia drivers ***'
 
 sudo pacman -S nvidia \
     ffnvcodec-headers \
-    libvdpau libxnvctrl \
+    libvdpau \
+    libxnvctrl \
+    nvidia-dkms
     nvidia-settings \
     nvidia-utils \
     opencl-nvidia \
     nvidia-cg-toolkit \
+    vulkan-icd-loader \
+    lib32-vulkan-icd-loader \
     lib32-flex \
     lib32-libcanberra \
     lib32-libcanberra-pulse \

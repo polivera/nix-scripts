@@ -1,9 +1,7 @@
 #!/bin/bash
 
 sudo pacman -S \
-  php composer php-sqlite php-xsl xdebug \
   python python-pip pyenv \
-  docker docker-compose \
   jdk11-openjdk go gdb \
   --noconfirm --needed
 
