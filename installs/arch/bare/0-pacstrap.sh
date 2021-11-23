@@ -24,6 +24,7 @@ echo "*** Creating and mounting swapfile ***"
 dd if=/dev/zero of=$SWAP_PATH bs=1M count=$SWAP_SIZE status=progress
 chmod 600 $SWAP_PATH
 mkswap $SWAP_PATH
+swapon $SWAP_PATH
 unset $SWAP_PATH
 unset $SWAP_SIZE
 
