@@ -6,7 +6,7 @@ sudo pacman -S nvidia \
     ffnvcodec-headers \
     libvdpau \
     libxnvctrl \
-    nvidia-dkms
+    nvidia-dkms \
     nvidia-settings \
     nvidia-utils \
     opencl-nvidia \
