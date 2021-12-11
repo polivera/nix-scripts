@@ -1,8 +1,8 @@
-#!/usr/local/bin/bash
+#!/usr/bin/env bash
 
 # Customization section
 UCODE_TYPE=amd-ucode
-SWAP_PATH=/usr/share/swapfile
+SWAP_PATH=/mnt/var
 SWAP_SIZE=8192        # In mb
 
 declare -A folderArray
@@ -21,10 +21,11 @@ unset $key
 unset $folderArray
 
 echo "*** Creating and mounting swapfile ***"
-dd if=/dev/zero of=$SWAP_PATH bs=1M count=$SWAP_SIZE status=progress
-chmod 600 $SWAP_PATH
-mkswap $SWAP_PATH
-swapon $SWAP_PATH
+mkdir $SWAP_PATH
+dd if=/dev/zero of=$SWAP_PATH/swapfile bs=1M count=$SWAP_SIZE status=progress
+chmod 600 $SWAP_PATH/swapfile
+mkswap $SWAP_PATH/swapfile
+swapon $SWAP_PATH/swapfile
 unset $SWAP_PATH
 unset $SWAP_SIZE
 
