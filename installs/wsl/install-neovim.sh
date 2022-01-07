@@ -1,6 +1,8 @@
 #!/bin/bash
+sudo apt install libfuse2
 
 mkdir "$HOME/Downloads"
+cd "$HOME/Downloads"
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
 chmod u+x nvim.appimage
 sudo mkdir /opt/nvim
