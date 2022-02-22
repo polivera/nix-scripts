@@ -6,8 +6,8 @@ SWAP_PATH=/mnt/var
 SWAP_SIZE=8192        # In mb
 
 declare -A folderArray
-folderArray["/mnt/mnt/shared"]="/dev/sdb1"
-folderArray["/mnt/mnt/test"]="/dev/sdc1"
+#folderArray["/mnt/mnt/shared"]="/dev/sdb1"
+#folderArray["/mnt/mnt/test"]="/dev/sdc1"
 # End customization section
 
 
@@ -36,7 +36,7 @@ echo "*** Installing base system ***"
 pacstrap /mnt \
     base base-devel linux linux-firmware linux-headers \
     dkms sudo networkmanager neovim $UCODE_TYPE \
-    grub efibootmgr os-prober ntfs-3g zsh openssh \
+    grub efibootmgr ntfs-3g zsh openssh \
     pipewire pipewire-alsa pipewire-pulse alsa alsa-utils bluez bluez-utils
 unset $UCODE_TYPE
 

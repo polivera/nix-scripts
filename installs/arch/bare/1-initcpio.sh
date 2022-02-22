@@ -7,8 +7,8 @@ TIME_ZONE="/America/Argentina/Buenos_Aires"
 SUDO_WITH_PASSWORD=0
 USER_NAME=pablo
 # When you finish setting your config, comment the next line
-echo "Remember to edit the config!"
-exit 1
+#echo "Remember to edit the config!"
+#exit 1
 # End customization
 
 # Configuring timezone
@@ -53,17 +53,17 @@ else
 fi
 
 grub-install --target=x86_64-efi --efi-directory=$BOOT_DIRECTORY --bootloader-id=GRUB
-echo 'GRUB_DISABLE_OS_PROBER=false' >> /etc/default/grub
+#echo 'GRUB_DISABLE_OS_PROBER=false' >> /etc/default/grub
 grub-mkconfig -o /boot/grub/grub.cfg
 
 # Enable NM
 systemctl enable NetworkManager
 systemctl enable bluetooth
 
-sed -i 's/#Color/Color/g' /etc/pacman.conf
+#sed -i 's/#Color/Color/g' /etc/pacman.conf
 
 # shellcheck disable=SC2129
-echo '' >>/etc/pacman.conf
-echo '[multilib]' >>/etc/pacman.conf
-echo 'Include = /etc/pacman.d/mirrorlist' >>/etc/pacman.conf
+#echo '' >>/etc/pacman.conf
+#echo '[multilib]' >>/etc/pacman.conf
+#echo 'Include = /etc/pacman.d/mirrorlist' >>/etc/pacman.conf
 

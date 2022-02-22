@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo '*** Development ***'
+
 sudo pacman -S \
   python python-pip pyenv \
   go gdb nodejs jdk-openjdk \
