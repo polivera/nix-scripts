@@ -18,7 +18,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
 curl -s "https://get.sdkman.io" | bash
 
 # Install stuff from AUR
-yay -S postman-bin visual-studio-code-bin jetbrains-toolbox --needed --noconfirm
+yay -S visual-studio-code-bin jetbrains-toolbox --needed --noconfirm
 
 # Install GO
 bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)

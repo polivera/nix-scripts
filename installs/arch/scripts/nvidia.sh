@@ -22,3 +22,4 @@ sudo pacman -S nvidia \
     libcanberra \
     libcanberra-pulse \
     libva-vdpau-driver --needed --noconfirm
+
