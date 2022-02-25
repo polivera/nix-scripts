@@ -1,9 +1,14 @@
 echo '*** Installing Gnome DE ***'
 
+sudo pacman -S archlinux-keyring --needed --noconfirm
+
+sudo pacman -Syu
+
 sudo pacman -S \
     avahi \
     eog \
     gnome \
+    gnome-themes-extra \
     gnome-tweaks \
     simple-scan \
     gst-libav \

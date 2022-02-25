@@ -4,7 +4,7 @@ echo '*** Terminal ***'
 
 sudo pacman -S \
   zsh bat exa tree \
-  tmux xclip \
+  tmux xclip rclone \
   curl wget \
   --needed --noconfirm
 

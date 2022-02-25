@@ -6,5 +6,5 @@ sudo pacman -S \
   firefox \
   --needed --noconfirm
 
-yay -S google-chrome 1password --needed --noconfirm
+yay -S google-chrome 1password spotify --needed --noconfirm
 
