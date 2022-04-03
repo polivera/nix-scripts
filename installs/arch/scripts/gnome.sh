@@ -1,6 +1,6 @@
 echo '*** Installing Gnome DE ***'
 
-sudo pacman -S archlinux-keyring --needed --noconfirm
+sudo pacman -S archlinux-keyring --noconfirm 
 
 sudo pacman -Syu
 
@@ -8,6 +8,8 @@ sudo pacman -S \
     avahi \
     eog \
     gnome \
+    pipewire-jack \
+    lib32-pipewire-jack \
     gnome-themes-extra \
     gnome-tweaks \
     simple-scan \

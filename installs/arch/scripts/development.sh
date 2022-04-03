@@ -17,6 +17,9 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
 # Install sdkman
 curl -s "https://get.sdkman.io" | bash
 
+# Install Rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
 # Install stuff from AUR
 yay -S visual-studio-code-bin jetbrains-toolbox --needed --noconfirm
 
