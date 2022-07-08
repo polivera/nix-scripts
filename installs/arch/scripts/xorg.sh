@@ -17,6 +17,7 @@ sudo pacman -S \
   xorg-server \
   xorg-twm \
   xorg-xinit \
+  xorg-xwayland \
   xdg-user-dirs-gtk \
   --needed --noconfirm
 

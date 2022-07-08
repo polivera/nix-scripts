@@ -21,10 +21,13 @@ sudo pacman -S \
     gst-plugins-good \
     gst-plugins-ugly \
     devhelp \
+    firefox \
     kvantum-qt5 \
     --needed --noconfirm
 
 yay -S chrome-gnome-shell-git --needed --noconfirm
+
+yay -S google-chrome 1password spotify --needed --noconfirm
 
 sudo systemctl enable gdm
 

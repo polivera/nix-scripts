@@ -23,3 +23,5 @@ sudo pacman -S nvidia \
     libcanberra-pulse \
     libva-vdpau-driver --needed --noconfirm
 
+echo "Remember to add kernel parameter nvidia-drm.modeset=1"
+

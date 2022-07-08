@@ -24,9 +24,9 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 yay -S visual-studio-code-bin jetbrains-toolbox --needed --noconfirm
 
 # Install GO
-bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
-source ~/.gvm/scripts/gvm
-gvm install go1.4 -B
-gvm install go1.17.6
-gvm use go1.17.6
+# bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
+# source ~/.gvm/scripts/gvm
+# gvm install go1.4 -B
+# gvm install go1.17.6
+# gvm use go1.17.6
 
