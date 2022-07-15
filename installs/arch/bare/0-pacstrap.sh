@@ -2,7 +2,7 @@
 
 # Customization section
 UCODE_TYPE=amd-ucode
-SWAP_PATH=/mnt/mnt/Data/System
+SWAP_PATH=/mnt/home/system
 SWAP_SIZE=8192        # In mb
 
 declare -A folderArray
