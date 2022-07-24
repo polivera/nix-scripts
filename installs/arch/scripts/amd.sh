@@ -18,4 +18,3 @@ sudo pacman -S mesa \
     --needed --noconfirm
 
 yay -S radeon-profile-git radeon-profile-daemon --needed --noconfirm
-
