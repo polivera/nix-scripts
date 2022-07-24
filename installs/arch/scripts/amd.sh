@@ -10,7 +10,12 @@ sudo pacman -S mesa \
     libva-mesa-driver \
     lib32-libva-mesa-driver \
     vulkan-icd-loader \
-    lib32-vulkan-icd-loader
+    lib32-vulkan-icd-loader \
     mesa-vdpau \
     lib32-mesa-vdpau \
+    mesa-demos \
+    xorg-xdriinfo \
     --needed --noconfirm
+
+yay -S radeon-profile-git radeon-profile-daemon --needed --noconfirm
+

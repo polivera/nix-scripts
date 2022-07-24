@@ -3,7 +3,7 @@
 # Customization section
 UCODE_TYPE=amd-ucode
 SWAP_PATH=/mnt/home/system
-SWAP_SIZE=8192        # In mb
+SWAP_SIZE=16384        # In mb
 
 declare -A folderArray
 #folderArray["/mnt/mnt/shared"]="/dev/sdb1"
