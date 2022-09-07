@@ -17,4 +17,3 @@ sudo pacman -S mesa \
     xorg-xdriinfo \
     --needed --noconfirm
 
-yay -S radeon-profile-git radeon-profile-daemon --needed --noconfirm
