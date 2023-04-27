@@ -3,7 +3,7 @@
 # Customization variables
 MACHINE_NAME=otrave
 BOOT_DIRECTORY=/boot/efi
-TIME_ZONE="/America/Argentina/Buenos_Aires"
+TIME_ZONE="/Europe/Madrid"
 SUDO_WITH_PASSWORD=0
 USER_NAME=pablo
 # When you finish setting your config, comment the next line
