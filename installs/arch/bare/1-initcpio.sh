@@ -20,7 +20,7 @@ hwclock --systohc
 cp /etc/locale.gen /etc/locale.gen.back
 echo 'en_US.UTF-8 UTF-8' >/etc/locale.gen
 echo 'en_GB.UTF-8 UTF-8' >>/etc/locale.gen
-echo 'es_AR.UTF-8 UTF-8' >>/etc/locale.gen
+echo 'es_ES.UTF-8 UTF-8' >>/etc/locale.gen
 locale-gen
 echo 'LANG=en_US.UTF-8' >/etc/locale.conf
 
