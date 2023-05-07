@@ -36,7 +36,7 @@ echo "*** Installing base system ***"
 pacstrap /mnt \
     base base-devel linux linux-firmware linux-headers \
     dkms sudo networkmanager neovim $UCODE_TYPE \
-    grub efibootmgr ntfs-3g zsh git openssh \
+    grub efibootmgr ntfs-3g zsh zip git openssh \
     pipewire pipewire-pulse bluez bluez-utils
 unset $UCODE_TYPE
 
